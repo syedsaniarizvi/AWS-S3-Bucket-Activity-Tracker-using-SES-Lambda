@@ -12,23 +12,44 @@ The AWS S3 Bucket Activity Tracker is a serverless project aimed at monitoring a
 **Services Used**
 
 Amazon SES (Simple Email Service): Used for sending email notifications to users, providing a reliable and scalable email delivery solution.
+
 IAM (Identity and Access Management): Manages access permissions and security policies for AWS resources, ensuring secure interactions between services.
+
 Amazon S3: Serves as the primary storage for tracking activity logs and storing objects. It is also the focal point of monitoring for bucket activity.
+
 AWS Lambda: Executes serverless functions triggered by S3 bucket events, enabling seamless automation of activity tracking and notification generation.
-Procedure (Step-wise Implementation)
+
+**Procedure (Step-wise Implementation)**
+
 Set Up IAM Roles: Create IAM roles with appropriate permissions to allow Lambda functions to interact with S3 buckets and SES for sending emails.
+
 Configure S3 Event Notifications: Configure S3 bucket event notifications to trigger AWS Lambda functions upon object creation or deletion.
+
 Develop Lambda Functions: Write Lambda functions to process S3 events, extract relevant information (such as bucket names and object names), and trigger email notifications using SES.
+
 Set Up SES Configuration: Configure SES to send emails, including defining sender and recipient addresses and verifying domain identities.
+
 Deploy Lambda Functions: Deploy Lambda functions to the AWS Lambda service.
+
 Test Configuration: Test the setup by creating or deleting objects within the monitored S3 buckets and verifying that email notifications are received.
 
 **Applications and Use Cases**
 
 Data Governance: Monitor changes in S3 buckets to ensure compliance with data governance policies.
+
 Security Monitoring: Detect unauthorized access or data breaches by tracking S3 activity.
+
 Operational Insights: Gain insights into usage patterns and trends by analyzing S3 activity logs.
+
 Compliance Reporting: Generate reports on S3 activity for compliance audits and regulatory requirements.
 
+**Outputs**
+
+<img width="1552" alt="Screenshot 2024-03-31 at 2 21 42 AM" src="https://github.com/syedsaniarizvi/AWS-S3-Bucket-Activity-Tracker-using-SES-Lambda/assets/109584787/2198cad2-d071-4597-a2f6-dae68b53aff5">
+
+<img width="1552" alt="Screenshot 2024-03-31 at 2 23 25 AM" src="https://github.com/syedsaniarizvi/AWS-S3-Bucket-Activity-Tracker-using-SES-Lambda/assets/109584787/659b704a-4f2f-4be8-b9f2-f1590fb9e747">
+
+
 **Conclusion**
+
 The AWS S3 Bucket Activity Tracker project provides a robust solution for monitoring and tracking activities within S3 buckets, enhancing visibility and control over data storage environments. By leveraging serverless architecture and AWS services such as Lambda, S3, SES, and IAM, the project offers a scalable, cost-effective, and automated approach to S3 activity tracking. With its ease of implementation and broad applicability, this project serves as a valuable tool for AWS users seeking to enhance their data management practices and maintain compliance with security and governance standards.
